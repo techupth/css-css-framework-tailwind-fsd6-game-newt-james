@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body class="h-screen bg-slate-200 flex justify-center items-center">
+    <div class="bg-white rounded-xl p-5">
+      <div class="text-xl text-zinc-600 p-2">Login to Website</div>
+      <div class="gap-9 p-2 flex justify-between">
+        <label for="Email">Email</label>
+        <input
+          type="email"
+          id="Email"
+          class="w-full py-1 border hover:border-violet-500 focus:border-violet-300 focus:outline-none"
+        />
+      </div>
+      <div class="gap-2 p-2 flex justify-between">
+        <label for="Password">Password</label>
+        <input
+          type="password"
+          id="Password"
+          class="w-full py-1 border hover:border-violet-500 focus:border-violet-300 focus:outline-none"
+        />
+      </div>
+      <div class="p-2 flex justify-between">
+        <button
+          class="w-36 p-2 rounded-full bg-violet-500 text-white hover:bg-violet-400 active:bg-violet-600 focus:ring focus:ring-violet-300"
+        >
+          Sign in
+        </button>
+        <button
+          class="w-36 p-2 rounded-full bg-white text-violet-600 hover:bg-violet-100 focus:ring focus:ring-violet-300"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
