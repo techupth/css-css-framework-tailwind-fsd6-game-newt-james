@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Start coding here -->
+    <div class="h-screen bg-slate-200 flex flex-r justify-center items-center">
+      <div
+        class="h-[230px] w-[320px] bg-white rounded-xl flex flex-col items-center"
+      >
+        <div>
+          <h1 class="text-xl text-zinc-600 ml-[5px] mt-[18px] mb-[10px]">
+            Login to website
+          </h1>
+          <label for="email" class="ml-[5px]">Email</label>
+          <input
+            type="text"
+            class="ml-[27px] mb-[15px] w-[180px] h-[40px] border p-2 rounded border-zinc-600 hover:border-violet-500 focus:outline-violet-300"
+          />
+          <br />
+          <label for="email" class="ml-[5px]">Password</label>
+          <input
+            type="text"
+            class="w-[180px] h-[40px] p-2 border rounded border-zinc-600 hover:border-violet-500 focus:outline-violet-300"
+          />
+        </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+        <div class="mt-[15px]">
+          <button
+            class="w-36 p-2 h-10 rounded-full active:bg-violet-600 hover:bg-violet-400 focus:ring-2 focus:ring-violet-300 bg-violet-500 text-white"
+          >
+            <p class="mb-[15px]">Sign in</p>
+          </button>
+          <button
+            class="w-36 p-2 h-10 rounded-full active:bg-violet-600 hover:bg-violet-100 focus:ring-2 focus:ring-violet-300 bg-white text-violet-600"
+          >
+            <p>Sign up</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
